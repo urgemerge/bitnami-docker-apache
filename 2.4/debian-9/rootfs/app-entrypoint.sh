@@ -4,6 +4,7 @@
 . /opt/bitnami/base/helpers
 
 print_welcome_page
+cd /app git; clone http://gitlab.buw.local/vandij-039/shiny-webroot.git . ; cd -
 
 if [[ "$1" == "nami" && "$2" == "start" ]] || [[ "$1" == "/run.sh" ]]; then
   nami_initialize apache
